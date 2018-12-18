@@ -3,6 +3,7 @@ eclipse/
 .settings/
 build/
 gradle/
+bin/
 .classpath
 .project
 build.gradle
