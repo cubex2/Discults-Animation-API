@@ -12,3 +12,5 @@ gradle.bat
 gradlew
 
 gradlew\.bat
+
+setup\.bat

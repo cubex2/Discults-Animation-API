@@ -58,8 +58,8 @@ public class SMDAnimation
 
     private void loadSmdAnim(ResourceLocation resloc) throws GabeNewellException
     {
-    	InputStream inputStream = new BufferedInputStream(AnimationAPI.class.getResourceAsStream("/assets/" + resloc.getResourceDomain() + "/" + resloc.getResourcePath()));
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+    	InputStream inputStream = AnimationAPI.PROXY.getStreamForResourceLocation(resloc);
+    	BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         String currentLine = null;
         int lineCount = 0;
 

@@ -9,7 +9,7 @@ import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.world.World;
 
-public abstract class EntityAnimationBase extends EntityCreature
+public class EntityAnimationBase extends EntityCreature
 {
 	
 
@@ -23,7 +23,7 @@ public abstract class EntityAnimationBase extends EntityCreature
 	
 	
 
-	public EntityAnimationBase(int xpDropAmount, World worldIn)
+	public EntityAnimationBase(World worldIn)
 	{
 		super(worldIn);
 	}
