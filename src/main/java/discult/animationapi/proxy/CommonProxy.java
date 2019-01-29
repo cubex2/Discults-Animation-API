@@ -12,7 +12,7 @@ public class CommonProxy
 {
 	public void preInit() 
 	{
-		int id = 201;
+		int id = 202;
 		EntityRegistry.registerGlobalEntityID(EntityTest.class, "test", id);
 		EntityRegistry.registerModEntity(EntityTest.class, "Test", id, AnimationAPI.INSTANCE, 64, 1, false);
 	}

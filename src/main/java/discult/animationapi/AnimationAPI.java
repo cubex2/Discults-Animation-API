@@ -14,7 +14,7 @@ import discult.animationapi.testing.ItemRegister;
 @Mod(modid = "animationapi", name = "Animation API", version = "0.1")
 public class AnimationAPI 
 {
-	//The MODID for the animatons api so other MODs need to call in there preInit and set it to thier modid
+	//The MODID for the animatons api so other MODs need to call in there preInit and set it to their modid
 	//TODO figure a way to do it without it
 	public static String MODID = "animationapi";
 	
