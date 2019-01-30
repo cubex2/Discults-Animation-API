@@ -16,7 +16,7 @@ public class CommonProxy
 		EntityRegistry.registerGlobalEntityID(EntityTest.class, "test", id);
 		EntityRegistry.registerModEntity(EntityTest.class, "Test", id, AnimationAPI.INSTANCE, 64, 1, false);
 	}
-	
+	 
 	public void init() 
 	{
 	}
