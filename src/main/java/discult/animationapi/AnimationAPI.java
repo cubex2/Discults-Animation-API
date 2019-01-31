@@ -8,35 +8,30 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import discult.animationapi.proxy.CommonProxy;
 
 @Mod(modid = "animationapi", name = "Animation API", version = "0.1")
-public class AnimationAPI 
-{
+public class AnimationAPI {
 	public static String MODID = "animationapi";
-	
+
 	@SidedProxy(clientSide = "discult.animationapi.proxy.ClientProxy", serverSide = "discult.animationapi.proxy.CommonProxy")
 	public static CommonProxy PROXY;
-	
+
 	@Mod.Instance("animationapi")
-    public static AnimationAPI INSTANCE;
-	
+	public static AnimationAPI INSTANCE;
+
 	@Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        PROXY.preInit();
-    }
+	public void preInit(FMLPreInitializationEvent event) {
+		PROXY.preInit();
+	}
 
-    @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event) {
 
-        PROXY.init();
+		PROXY.init();
 
+	}
 
-    }
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		PROXY.postInit();
+	}
 
-    @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
-        PROXY.postInit();
-    }
-	
 }

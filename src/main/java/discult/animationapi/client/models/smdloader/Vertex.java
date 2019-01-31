@@ -7,16 +7,14 @@ package discult.animationapi.client.models.smdloader;
  * @author Discult/Jordan Ellison
  *
  */
-public class Vertex
-{
-   public float x;
-   public float y;
-   public float z;
+public class Vertex {
+	public float x;
+	public float y;
+	public float z;
 
-   public Vertex(float x, float y, float z)
-   {
-      this.x = x;
-      this.y = y;
-      this.z = z;
-   }
+	public Vertex(float x, float y, float z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 }
