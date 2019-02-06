@@ -9,7 +9,7 @@ import discult.animationapi.proxy.CommonProxy;
 
 @Mod(modid = "animationapi", name = "Animation API", version = "0.1")
 public class AnimationAPI {
-	public static String MODID = "animationapi";
+	public static final String MODID = "animationapi";
 
 	@SidedProxy(clientSide = "discult.animationapi.proxy.ClientProxy", serverSide = "discult.animationapi.proxy.CommonProxy")
 	public static CommonProxy PROXY;
